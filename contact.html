@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DANNY'S</title>
+
+        <!-- Favicon per diversi formati e dispositivi -->
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+        <link href="css_contact.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nerko+One&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kite+One&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <main>
+        <header id="main-header" class="main-header-cl">
+            <div class="header-wrapper">
+                <a href="index.html"><img src="img/logo.png" alt="Sagoma" width=20% align="left"></a>
+
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="about.html"><h3>About</h3></a>
+                        <li><a href="contact.html"><h3>Contact</h3></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <hr>
+
+        <section id="sect01">
+            <h2>CONTACT</h2>
+        </section>
+
+        <section id="sect02">
+            <div class="middle-part">
+                <img src="img/contact.jpg" alt="Contatto">
+
+                <form name="formmail" method="post" action="https://formspree.io/chiara.danniballe@accademiadiurbino.it">
+
+                    <input type="hidden" name="_subject" value="Messaggio dal sito" />
+                    <input type="hidden" name="_next" value="http://www.miosito.com/pagina-successo.html" />
+                  
+                    <label for="nome">Nome e Cognome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Inserisci Nome e Cognome">
+                  
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Indirizzo di posta elettronica">
+                  
+                    <label for="tel">Telefono</label>
+                    <input type="text" id="tel" name="tel" placeholder="Numero di telefono">
+                  
+                    <label for="msg">Messaggio</label>
+                    <textarea id="msg" name="msg" placeholder="Scrivi il tuo messaggio"></textarea>
+                  
+                    <input type="submit" value="Invia Richiesta">
+                  
+                  </form>
+
+            </div>
+        </section>        
+
+        <hr>
+
+        <footer id="page-footer">
+            <nav id="footer-nav" class="footer-nav-cl">
+                <a href="index.html"><img src="img/logo.png" alt="Sagoma" width=20% align="left" style="margin-left: 25px;"></a>
+                <ul class="immagini_base" align="right">
+                    <li><a href="https://www.instagram.com/_chiara_danny_?igsh=MWdwbDh5aXM4aGNz" target="_blank"><img src="img/inst_Tavola disegno 1-03.png" alt="Instagram"></a>
+                    <li><a href="https://www.google.com/intl/it/gmail/about/" target="_blank"><img src="img/gm_Tavola disegno 1-03.png" alt="Gmail">
+                    <li><a href="https://www.facebook.com/?locale=it_IT" target="_blank"><img src="img/fac_Tavola disegno 1-03.png" alt="Facebook">
+                </ul>
+            </nav>
+            <div class="copywrite"></div>
+        </footer>
+
+    </main>
+</body>
+</html>

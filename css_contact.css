@@ -1,0 +1,292 @@
+/*-----------------------------------------------------------------------------------------------*/
+/* Interfaccia del body */
+body {
+    background-color: rgb(255, 255, 255); /* Sfondo bianco per il body */
+    color: rgb(0, 0, 0); /* Testo nero per default */
+    margin: 0;
+    padding: 0;
+    font-family: "Nerko One", "Josefin Sans", "Nanum Pen Script", sans-serif;
+}
+
+/* css document */
+@import url(normalize.css);
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Definizione dell'header */
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Definizione immagine logo dell'header */
+.header-wrapper img {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+/* Menu di navigazione */
+.header-wrapper nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none; /* Rimuove i bullet points */
+    text-align: right; /* Mette a destra il testo */
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.header-wrapperr nav li {
+    display: inline-block; /* Elementi li uno accanto all'altro */
+    padding: 5px 15px;
+    margin-right: 15px;
+}
+
+.header-wrapper nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-wrapper nav li a:hover {
+    color: rgb(198, 0, 195);
+    text-decoration:underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.header-wrapper nav li h3 {
+    color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    padding-right: 25px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/* Linea divisioria */
+hr {
+    color: rgb(198, 0, 195);
+    background: rgb(198, 0, 195);
+    border: 0px;
+    height: 5px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Impostazione degli stili di font delle sezioni di testo della pagina*/
+#main-header h1{
+    text-align: left;
+    font-size: 5vw;
+    margin-block: 0;
+    line-height: 1em;
+    font-family: "Nerko One" /* Font di default */
+}
+
+/* Definizione parametri scritta a sinistra */
+.middle-part {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+    margin-bottom: 140px;
+}
+
+#sect01 h2 {
+    font-family: "Nerko One";
+    font-size: 50px;
+    margin: 30px auto 0px;
+    margin-left: auto;
+    padding: 0px 0px 0px 25px;
+    margin-left: 56px;
+  }
+
+#sect02 h3 {
+	font-family: "Josefin Sans", sans-serif;
+    font-weight: 380;
+    font-size: 18px;
+}
+
+#sect03 h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 380;
+    font-size: 18px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* Parametri relativi alla parte centrale, con immagini e testo*/
+/* Definizione parametri immagine profilo a destra */
+.middle-part img {
+	display: block;
+	margin-right: auto;
+    width: 35%;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 58px;
+    padding-top: 50px;
+    padding-left: 27px;
+}
+
+/* Testo iniziale */
+.middle-part h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 380;
+    font-size: 18px;
+    text-decoration: none; 
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Definizione parametri del ocntenitore ul per immagini e scritte */
+.cont {
+    align-items: center;
+    list-style-type: none; /* Rimuove i bullet points */
+    padding-right: 445px;
+    margin-top: 40px;
+}
+
+/* Definizione parametri immagini loghi contatti a destra */
+.cont img {
+    list-style-type: none; /* Rimuove i bullet points */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 20px 10px;
+    margin-block-end: 10px;
+    width:25%;
+    height: auto;
+}
+
+/* Parametri per eliminare il sottolineato dei link accanto alle immagini */
+.cont li {
+    text-decoration: none; 
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont li a {
+	text-decoration: none; 
+	color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 165px;
+    width: 95px;
+    height: 84.15px;
+}
+
+/* Loghi contatti */
+.cont li img{
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height: auto;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Script del form per il contatto via mail */
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 635px;
+    margin-right: 195px;
+    margin-top: 88px;
+}
+
+label, input[type=text], textarea {
+display: block;
+box-sizing: border-box;
+width: 100%;
+}
+
+input[type=text], textarea {
+padding: 10px;
+border: 1px solid #CCC;
+border-radius: 3px;
+box-sizing: border-box;
+margin-top: 5px;
+margin-bottom: 15px;
+resize: vertical;
+}
+
+input[type=submit] {
+background-color: #45a049;
+color: #FFF;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Footer con copyright centrato */
+footer {
+    text-align: center; /* Centra il testo nel footer */
+    padding: 5px 0px 5px 0px; /* Spazio sopra e sotto il testo */
+}
+
+.footer-nav-cl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+/* Definizione immagine logo dell'header */
+.footer-nav-cl img {
+    margin-top: 5px;
+}
+
+.footer-nav-cl img {
+    margin-top: 25px;
+}
+
+.footer-nav-cl a img {
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.immagini_base {
+    list-style-type: none; /* Rimuove i bullet points */
+	margin-left: auto;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-block-end: 10px;
+	width: 13%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+    padding:0%;
+}
+
+nav li img{
+    display: inline; /* Elementi li uno accanto all'altro */
+    margin-left: auto;
+    margin-right: auto;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*----------------------MEDIA QUERY--------------------*/
+@media screen and (min-width:768px) {
+    div.member {
+        width:32%;
+        height: auto;
+    }
+}
+/*-----------------------------------------------------------------------------------------------*/

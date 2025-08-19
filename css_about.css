@@ -1,0 +1,241 @@
+/*-----------------------------------------------------------------------------------------------*/
+/* Interfaccia del body */
+body {
+    background-color: rgb(255, 255, 255); /* Sfondo bianco per il body */
+    color: rgb(0, 0, 0); /* Testo nero per default */
+    margin: 0;
+    padding: 0;
+    font-family: "Nerko One", "Josefin Sans", "Kite One", sans-serif;
+}
+
+/* css document */
+@import url(normalize.css);
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Definizione dell'header */
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Definizione immagine logo dell'header */
+.header-wrapper img {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+/* Menu di navigazione */
+.header-wrapper nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none; /* Rimuove i bullet points */
+    text-align: right; /* Mette a destra il testo */
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.header-wrapperr nav li {
+    display: inline-block; /* Elementi li uno accanto all'altro */
+    padding: 5px 15px;
+    margin-right: 15px;
+}
+
+.header-wrapper nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-wrapper nav li a:hover {
+    color: rgb(255, 238, 6);
+    text-decoration:underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.header-wrapper nav li h3 {
+    color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    padding-right: 25px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Linea divisioria */
+hr {
+    color: rgb(255, 238, 6);
+    background: rgb(255, 238, 6);
+    border: 0px;
+    height: 5px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Impostazione degli stili di font delle sezioni di testo della pagina*/
+#main-header h1{
+    text-align: left;
+    font-size: 5vw;
+    margin-block: 0;
+    line-height: 1em;
+    font-family: "Nerko One" /* Font di default */
+}
+
+/* Definizione parametri scritta a sinistra */
+.middle-part {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#sect01 h2 {
+    font-family: "Nerko One";
+    font-size: 50px;
+    margin: 30px auto 0px;
+    padding: 0px 0px 0px 25px;
+    margin-left: 56px;
+}
+
+#sect02 h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 380;
+    font-size: 18px;
+    padding: 0px 0px 0px 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-left: 45px;
+    margin-right: 163px;
+    margin-top: -38px;
+    padding-top: 0px;
+    text-align: justify;
+}
+
+#container01 h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 380;
+    font-size: 18px;
+    padding: 0px 0px 0px 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-left: 82px;
+    padding-top: 0px;
+    text-align: justify;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Parametri relativi alle immagini */
+/* Definizione parametri immagine profilo a destra */
+.middle-part img {
+    display: block;
+    margin-left: 0px;
+    margin-right: 240px;   
+    margin-top: 0px;
+    width: 21%;
+    height: auto;
+}
+
+/* Blocco di immagini dei programmi disposte in linea 5x2 */
+#container01 {
+    padding: 0;
+    margin-left: 0px;
+}
+
+#container01 ul {
+	display: flex;
+    flex-wrap: wrap;
+	list-style-type: none; /* Rimuove i bullet points */
+	margin-bottom: 0px;
+	margin-top: 0px;
+	height: 98.8px;
+	padding-left: 170px;
+	margin-top: -20px;
+	width: 265px;
+	height: 145px;
+}
+
+#container01 li {
+    width: 20px;
+    height: 20px;
+    margin: 17px;
+    padding-right: 12px;
+}
+
+#container01 img {
+    list-style-type: none; /* Rimuove i bullet points */
+    display: flex; /* Elementi li uno accanto all'altro */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -27px;
+    margin-block-end: 10px;
+    padding-left: 111px;
+    width:2330%;
+    height: auto;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Footer con copyright centrato */
+footer {
+    text-align: center; /* Centra il testo nel footer */
+    padding: 5px 0px 5px 0px; /* Spazio sopra e sotto il testo */
+}
+
+.footer-nav-cl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+/* Definizione immagine logo dell'header */
+.footer-nav-cl img {
+    margin-top: 5px;
+}
+
+.footer-nav-cl img {
+    margin-top: 25px;
+}
+
+.footer-nav-cl a img {
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.immagini_base {
+    list-style-type: none; /* Rimuove i bullet points */
+	margin-left: auto;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-block-end: 10px;
+	width: 13%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+    padding:0%;
+}
+
+nav li img{
+    display: inline; /* Elementi li uno accanto all'altro */
+    margin-left: auto;
+    margin-right: auto;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*----------------------MEDIA QUERY--------------------*/
+@media screen and (min-width:768px) {
+    div.member {
+        width:32%;
+        height: auto;
+    }
+}
+/*-----------------------------------------------------------------------------------------------*/

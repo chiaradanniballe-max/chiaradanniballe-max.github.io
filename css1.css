@@ -1,0 +1,308 @@
+/*-----------------------------------------------------------------------------------------------*/
+/* Interfaccia del body */
+body {
+    background-color: rgb(255, 255, 255); /* Sfondo azzurro per il body */
+    color: rgb(0, 0, 0); /* Testo nero per default */
+    margin: 0;
+    padding: 0;
+    font-family: "Nerko One", "Josefin Sans", "Kite One", sans-serif;
+}
+
+/* css document */
+@import url(normalize.css);
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Definizione dell'header */
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+/* Definizione immagine logo dell'header */
+.header-wrapper img {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+/* Menu di navigazione */
+.header-wrapper nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none; /* Rimuove i bullet points */
+    text-align: right; /* Mette a destra il testo */
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.header-wrapperr nav li {
+    display: inline-block; /* Elementi li uno accanto all'altro */
+    padding: 5px 15px;
+    margin-right: 15px;
+}
+
+.header-wrapper nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-wrapper nav li a:hover {
+    color: #00f;
+    text-decoration:underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.header-wrapper nav li h3 {
+    color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    padding-right: 25px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Linea divisioria */
+hr {
+    color: #00f;
+    background: #00f;
+    border: 0px;
+    height: 5px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+
+    .container {
+        display: flex; /* Attiva il layout flessibile */
+        justify-content: space-around; /* Spazia gli elementi in modo uniforme */
+        align-items: flex-start; /* Allinea gli elementi in alto */
+        padding: 20px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        flex-wrap: wrap; /* Permette agli elementi di andare a capo su schermi piccoli */
+    }
+
+    .colonna {
+        width: 45%; /* Imposta la larghezza della colonna (puoi modificarla) */
+        box-sizing: border-box; /* Include padding e bordo nella larghezza */
+        text-align: center; /* Centra il contenuto della colonna */
+        margin-bottom: 20px; /* Spazio sotto ogni colonna */
+        font-size: 20px;
+        text-align: center;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .colonna h3 {
+        margin-bottom: 10px; /* Spazio sotto il titolo */
+    }
+
+    .colonna img {
+        max-width: 100%; /* L'immagine non supera la larghezza della colonna */
+        height: auto; /* Mantiene le proporzioni dell'immagine */
+        margin-top: 10px; /* Spazio sopra l'immagine */
+    }
+
+    /* Media query per schermi più piccoli (es. cellulari) */
+    @media (max-width: 768px) {
+        .colonna {
+            width: 100%; /* Su schermi piccoli, le colonne occupano tutta la larghezza */
+        }
+    }
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Definizione titolo */
+#sect01 h1 {
+    font-size: 85px;
+    text-align: center;
+    font-family: "Nerko One"; /* Font di default */
+    color: rgb(0, 0, 0); 
+    margin: 0px auto 40px;
+    padding: 0px 0px 0px 25px;
+}
+
+
+#sect02 h3 {
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#sect03 h3 {
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 0px 0px 0px 0px;
+    width: 640.6px;
+    text-align: left;
+}
+
+#sect04 h3 {
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 0px 0px 0px 0px;
+    width: 640.6px;
+    text-align: right;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/*Definizione parametri galleria immagini*/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-top: 100px;
+}
+
+.gallery {
+    display: inline-block;
+}
+
+.gallery img {
+    display: inline-block;
+    width: 22%;
+    margin: 10px 1%;
+    padding-bottom: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    /* Transizione per l'effetto hover */
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    /* Ingrandisce l'immagine del 20% */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.647);
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal img {
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 640px;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    color: #000000;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000da;
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Footer con copyright centrato */
+footer {
+    text-align: center; /* Centra il testo nel footer */
+    padding: 5px 0px 5px 0px; /* Spazio sopra e sotto il testo */
+}
+
+.footer-nav-cl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+/* Definizione immagine logo dell'header */
+.footer-nav-cl img {
+    margin-top: 5px;
+}
+
+.footer-nav-cl img {
+    margin-top: 25px;
+}
+
+.footer-nav-cl a img {
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.immagini_base {
+    list-style-type: none; /* Rimuove i bullet points */
+	margin-left: auto;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-block-end: 10px;
+	width: 13%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+    padding:0%;
+}
+
+nav li img{
+    display: inline; /* Elementi li uno accanto all'altro */
+    margin-left: auto;
+    margin-right: auto;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*----------------------MEDIA QUERY--------------------*/
+@media screen and (min-width:768px) {
+    div.member {
+        width:32%;
+        height: auto;
+    }
+}
+/*-----------------------------------------------------------------------------------------------*/
