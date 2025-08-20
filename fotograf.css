@@ -1,0 +1,284 @@
+/*-----------------------------------------------------------------------------------------------*/
+/* Interfaccia del body */
+body {
+    background-color: rgb(255, 255, 255); /* Sfondo azzurro per il body */
+    color: rgb(0, 0, 0); /* Testo nero per default */
+    margin: 0;
+    padding: 0;
+    font-family: "Nerko One", "Josefin Sans", "Kite One", sans-serif;
+}
+
+/* css document */
+@import url(normalize.css);
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Definizione dell'header */
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+/* Definizione immagine logo dell'header */
+.header-wrapper img {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+/* Menu di navigazione */
+.header-wrapper nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none; /* Rimuove i bullet points */
+    text-align: right; /* Mette a destra il testo */
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.header-wrapperr nav li {
+    display: inline-block; /* Elementi li uno accanto all'altro */
+    padding: 5px 15px;
+    margin-right: 15px;
+}
+
+.header-wrapper nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-wrapper nav li a:hover {
+    color: rgb(0, 143, 69);
+    text-decoration:underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.header-wrapper nav li h3 {
+    color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    padding-right: 25px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Linea divisioria */
+hr {
+    color:  rgb(0, 143, 69);
+    background: rgb(0, 143, 69);
+    border: 0px;
+    height: 5px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Impostazione degli stili di font delle sezioni di testo della pagina*/
+#sect01 h1 {
+    font-size: 85px;
+    text-align: center;
+    font-family: "Nerko One"; /* Font di default */
+    color: rgb(0, 0, 0); 
+    margin: 0px auto 40px;
+    padding: 0px 0px 0px 25px;
+}
+
+#sect02 h2 {
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Nerko One"; 
+    padding: 0px 0px 0px 0px;
+    width: 640.6px;
+    text-align: left;
+}
+
+#sect02 h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 380;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-bottom: 45px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify;
+    width: 899.6px;
+}
+
+.contenitore{
+    width: 100%;
+}
+
+.colonne div{
+    float: left;
+    width: 35%;
+    padding: 5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+div.clearer{
+    float: none; 
+    clear: left;
+    padding-bottom: 2%;
+     padding-top: 2%;
+}
+
+#sect02 div a {
+    font-family: "Josefin Sans", sans-serif;
+    color: #d516b2;
+    text-decoration: none;
+}
+/*----------------------------------------------------------------------------------------------
+
+/*-----------------------------------------------------------------------------------------------*/
+/*Definizione parametri galleria immagini*/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-top: -14px;
+}
+
+.gallery {
+    display: inline-block;
+}
+
+.gallery img {
+    display: inline-block;
+    width: 22%;
+    margin: 10px 1%;
+    padding-bottom: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    /* Transizione per l'effetto hover */
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    /* Ingrandisce l'immagine del 20% */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 15px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.647);
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal img {
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 500px;
+}
+
+.close {
+    position: absolute;
+    top: -22px;
+    right: 16px;
+    color: #000000;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000da;
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Definizione parametri video laterale */
+.gallery video {
+    padding-bottom: 82px;
+    padding-left: 40px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Footer con copyright centrato */
+footer {
+    text-align: center; /* Centra il testo nel footer */
+    padding: 5px 0px 5px 0px; /* Spazio sopra e sotto il testo */
+}
+
+.footer-nav-cl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+/* Definizione immagine logo dell'header */
+.footer-nav-cl img {
+    margin-top: 5px;
+}
+
+.footer-nav-cl img {
+    margin-top: 25px;
+}
+
+.footer-nav-cl a img {
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.immagini_base {
+    list-style-type: none; /* Rimuove i bullet points */
+	margin-left: auto;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-block-end: 10px;
+	width: 13%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+    padding:0%;
+}
+
+nav li img{
+    display: inline; /* Elementi li uno accanto all'altro */
+    margin-left: auto;
+    margin-right: auto;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/*----------------------MEDIA QUERY--------------------*/
+@media screen and (min-width:768px) {
+    div.member {
+        width:32%;
+        height: auto;
+    }
+}
+/*-----------------------------------------------------------------------------------------------*/
